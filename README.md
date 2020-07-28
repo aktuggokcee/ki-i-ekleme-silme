@@ -1,2 +1,2 @@
-# ki-i-ekleme-silme
+# kisi-ekleme-silme
 Kişi ekleme - silme 
