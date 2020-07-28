@@ -1,0 +1,30 @@
+<!DOCTYPE html >
+<html  ng-app="app" >
+    <head lang="en">
+        <title>kisi ekle </title>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>  
+    <script src="/public/javascripts/app.js"></script>
+    <style src="/public/stylesheets/style.css"></style>
+</head>
+<body>
+    <h1>kişi listesi</h1>
+    <div ng-controller = "mainCtrl"> 
+        
+        
+        <input type="text" ng-model="todo.name">
+        
+        <input type="button" ng-click="addTodo(todo)" value="yeni ekle">
+        <li ng-repeat="todo in todos"> 
+            <input type="checkbox" ng-model="todo.isDone" value="sil">
+            <span ng-model="todo.id">{{todo.id}}</span>
+            <span ng-class="merhaba"> {{todo.name}}-{{todo.id}}-{{todo.isDone}}</span>
+          
+             </li>
+        
+        <input type="button" ng-click="deleteTodo(todo,isDone)" value="sil">
+    </div>
+    </body>
+</html>
+
+
+    
